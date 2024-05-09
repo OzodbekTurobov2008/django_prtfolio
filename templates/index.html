@@ -142,20 +142,21 @@
                     </svg>
                   </span>
                 </a>
-                <img src="{% static 'assets/img/about-visual.png' %}" alt="About Us">
+                <img src="{% static 'img/about-visual.png' %}" alt="About Us">
               </div>
               <div class="about--options">
-                <a href="#0">
-                  <h3>Ishchilar</h3>
+                {% for blog in blogs %}
+
+                <a href="" style="background-image: '{{blog.image}}';">
+                  <h3>{{blog.full_name}}</h3>
                 </a>
-                <a href="#0">
-                  <h3>G'oliblar</h3>
+                
                 </a>
-                <a href="#0">
-                  <h3>Tarix</h3>
-                </a>
+                {% endfor %}
               </div>
             </div>
+            
+         
           </li>
           <li class="l-section section">
             <div class="contact">
@@ -167,8 +168,8 @@
                     <a href="tel:+148126287560">+998 88 377 52 31</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="@Turobov_o8">Telegram</a></li>
+                    <li><a href="https://www.instagram.com/sifatedu_navoi">Instagram</a></li>
                     <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
                   </ul>
                 </div>
